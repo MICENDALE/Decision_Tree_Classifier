@@ -1,9 +1,9 @@
-# Breast Cancer Prediction using Decision Tree Classifier
+# Breast Cancer Classification using Decision Tree
 
 A decision tree is a non-parametric, supervised machine learning algorithm that is implemented to classify or predict a value by learning certain decision rules. The are two types of decision trees used for classification and regression purposes. For this project, we will train a decision tree classifier. 
 
 ## Aim
-To build a predictor model that classifies and labels breast tumors as **benign** or **malignant**
+To build a model that classifies and labels breast tumors as **benign** or **malignant**
 
 ## Approach 
 1. Dataset will be obtained from the **Scikit-learn** library in python
@@ -342,18 +342,6 @@ y = data['target']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33)
 ```
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -655,7 +643,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33)
 We have 188 observations for testing purposes. Now for the exciting part, let's train our model and see how it performs in classifying malignant breast cancer cases. 
 
 ## Decision tree classifier
-First, import the *decisiontreeclassifer* algorithm. Here you can set differet stopping criteria to prevent the tree from becoming bulky. In this case, the *ccp_alpha* library is used to perform pruning. You can read more [here](https://scikit-learn.org/stable/auto_examples/tree/plot_cost_complexity_pruning.html#sphx-glr-auto-examples-tree-plot-cost-complexity-pruning-py)
+First, import the *decisiontreeclassifer* algorithm. For 'best feature' determination, **gini impurity** will be reported which is a measure of how often a randomly chosen attribute is misclassified.Here you may also set differet stopping criteria to prevent the tree from becoming bulky. In this case, the *ccp_alpha* library is used to perform pruning. You can read more [here](https://scikit-learn.org/stable/auto_examples/tree/plot_cost_complexity_pruning.html#sphx-glr-auto-examples-tree-plot-cost-complexity-pruning-py)
 
 ```python
 from sklearn.tree import DecisionTreeClassifier
