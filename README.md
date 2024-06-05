@@ -693,7 +693,7 @@ _ = tree.plot_tree(clf,
                   fontsize=12)
 plt.show()
 ```
-![Decision tree classifier for breast cancer](C:\Users\USER\.ipython\Decision_Tree_Classifier\output2.png)
+![Decision tree classifier for breast cancer](output2.png)
 
 
 ## Model fit and accuracy
@@ -731,7 +731,7 @@ feature_importance = pd.DataFrame(clf.feature_importances_, index = feature_name
 feature_importance
 feature_importance.head(10).plot(kind='bar')
 ```
-![Importance of the attributes](C:\Users\USER\.ipython\Decision_Tree_Classifier\decisiontree.py)
+![Importance of the attributes](output1.png)
 
 # Key takeaways
 
